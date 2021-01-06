@@ -15,3 +15,8 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+mix.copyDirectory('node_modules/admin-lte/dist/img', 'public/dist/img');
+mix.js([
+	'node_modules/admin-lte/plugins/jquery/jquery.js',
+	'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js',
+	], 'public/plugins/jquery/adminlte.js');
